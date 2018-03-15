@@ -1,6 +1,6 @@
 wechat_app_id: "wx23590dfc9128ed46"
 wechat_secret: "b46ba3c16b07c253b914cb8f0d24ff13"
 wechat_token:  "7_t1gYkrt62QJKA1L5Smzsm5_AchCbsm6HHAB32BpZqJM-avydrMeEwJProufw28-sOdjOj-QuC5dBOU6gSz4j1ahqyUXzpOxLJ8nXEYov_DRcHyknOc6OMQbao_67dDm3imG2XVtAL0-ojhpyLOGgAGARUM"
-wechat_encoding_aes_key: "EncodingAESKey"
-wechat_trusted_domain_fullname: "http://7cb51dc6.ngrok.io/wechat"
+#wechat_encoding_aes_key: "EncodingAESKey"
+wechat_trusted_domain_fullname: "http://d306412d.ngrok.io"
 

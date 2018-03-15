@@ -261,7 +261,9 @@ Devise.setup do |config|
   #
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
   # so you need to do it manually. For the users scope, it would be:
-  # config.omniauth_path_prefix = '/my_engine/users/auth'
-  config.omniauth :wechat, Figaro.env.wechat_app_id, Figaro.env.wechat_secret
+  # config.omniauth_path_prefix = '/users/auth'
+  config.omniauth :wechat, Figaro.env.wechat_app_id, Figaro.env.wechat_secret,
+    :authorize_params => {:scope => "snsapi_userinfo", :redirect_uri =>  "http://d306412d.ngrok.io/users/auth/wechat/callback", :state => Figaro.env.wechat_app_id}
+
   config.warden { |manager| manager.failure_app = DeviseFailure }
 end
